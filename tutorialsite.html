@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Tutorial Site</title>
+    <link rel="stylesheet" type="text/css" href="tutorial.css">
+    <script src="angular.min.js"></script>
+    <script src="tutorial.js"></script>
+    <script src="text/javascript"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="stylesheet"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+</head>
+<body ng-app="myapp" ng-controller="mycontroller">
+<div class="mypro">
+  <div class="header">
+      <img src="logo.jpg">
+      <input type="text" placeholder="search css tutorial">
+      <input type="button" Value="Search">
+  </div>  
+  <div container="bannerheading">
+      <div class="link">
+      <input type="button" value="Home" ng-click="s1();">
+      <input type="button" value="Introduction to css" ng-click="s2();">
+      <input type="button" value="Css Tutorial Part 1" ng-click="s3();">
+      <input type="button" value="Css tutorial Part 2" ng-click="s4();">
+      <input type="button" value="Css tutorial Part 3" ng-click="s5()">
+      <input type="button" value="Css $ images" ng-click="s6();">
+      <input type="button" value="Css in Webpages" ng-click="s7();">
+      </div>
+      <div id=l2>
+       <h2>Step By Step Learning</h2>
+        <h1>Teaching Css Over 1 Year</h1>
+    </div>
+</div>
+    <div class="home" ng-show="r1">
+<div class="l3">
+    <div id="i1">
+      <b> You’ve come to the right place to learn CSS. My tutorials on web design & CSS makes
+     learning this stuff fun and easy – you will be up and running in no time because it 
+     ain’t that hard!
+    </div>
+    <div id="i2">
+        <b>CSS makes web design much easier. Using CSS you will be able to put out pages
+             with much less work, that load much faster, and will be easy to update and 
+             print!
+  </div>
+  <div class="l4">
+        <h3>FRONT END WEB DEVELOPERS (and CSS EXPERTS) AVERAGE YEARLY SALARY IN THE USA: $77,855</h3>
+    <a href="https://shop.killervideostore.com/">LEARN CSS3 EASILY FOR ONLY 29!</a>
+    </div>
+    <div class="l5">
+        <h2>Learn CSS step by step</h2>
+        <div id="i3">
+            This website is all about CSS, a key tool in web design. In case you’re not 
+            familiar with CSS: CSS is the sister technology to HTML that is used to style
+             your web pages.The details are in the tutorial,  but for now we can say that
+              CSS can make your web pages look great!
+        </div>
+        <div id="i4">
+                Get Cool CSS Tips! Newsletter Signup<br>
+            <input type="textbox" placeholder="add your email address">
+            <input type="button" value="Join" ng-click=join();></button>
+    </div>
+    <div id="i5">
+       <h3> How this website is set up</h3>
+       The website has 3 major sections:
+<ol>
+    <li><b>
+The introduction to CSS</b><br>
+
+We cover the basics and show you a few neat tricks.
+    </li>
+<li><b>A complete CSS tutorial</b><br> 
+We get down and dirty here giving you a solid foundation in CSS so you can use it in your own web design work right away!
+</li>
+<li><b>Additional CSS Resources</b><br>
+Supporting articles on CSS web design and a link takes you to an active CSS forum where you can ask any questions you may have.
+</li><br>
+Once completed, you will have taken the next step towards total nerd glory with these articles on creating a pure CSS web page. Not just CSS styling, but CSS positioning too, that means no tables required!<br><br>
+
+Once completed, you will be creating pages in sophisticated ways that 99% of web designers don’t even consider! Needless to say, you will have an advantage over the competition. All this is 100% standards compliant and should work in 99% of browsers being used today.
+</div>
+</div>
+    <br><br><br>
+<hr>
+</div>
+
+
+
+
+    <div class="Introduction" ng-show="r2">
+       <div class="a1">
+        <h3>Intoduction to Css: Part 1</h3>
+        <p>This first CSS article is designed to get your ‘feet on the ground’. You should know at least a little about HTML and <a href="#">web design</a> before you begin. Once you finish reading this page, you will be ready to jump into the tutorial!</p>
+       <br><b>My Popular CSS Video Course</b><br>
+       CSS3 works hand-in-hand with HTML5 to create the beautiful websites that we see today. My front end web developer course teaches you everything you need to know to build amazing websites that easily cost $2000-$3000 to build … and for only $29
+       </div>
+       <div class="a2">
+       <p>An introduction to Cascading Style Sheets</p>
+       CSS is the acronym for: ‘Cascading Style Sheets’. CSS is an extension to basic HTML that allows you to style your web pages.<br>
+       An example of a style change would be to make words bold. In standard HTML you would use the &ltb&gt tag like so:
+    <br><br>
+     <table border=2px width=950px>
+         <tr>
+             <td>&lt<b>b</b>&gtmake me bold&lt/<b>b</b>&gt</td>
+         </tr>
+     </table>
+    <br>
+    This works fine, and there is nothing wrong with it per se, except that now if you wanted to say change all your text that you initially made bold to underlined, you would have to go to every spot in the page and change the tag.
+    <br><br>
+    Another disadvantage can be found in this example: say you wanted to make the above text bold, make the font style Verdana and change its color to red, you would need a lot of code wrapped around the text
+    <br><br>
+    <table border=2px width=950px color=red>
+        <tr>
+            <td>&lt<b>font</b> color="#FF0000" face="Verdana, Arial,  Helvetica, sans-serif"&gt&lt/font&gt</td>
+        </tr>
+        <tr>
+            <td> &lt<b>strong</b>&gtThis is  text&lt/<b>strong</b>&gt</font</td>
+        </tr>
+    </table>
+    This is verbose and contributes to making your HTML messy. With CSS, you can create a custom style elsewhere and set all its properties, give it a unique name and then ‘tag’ your HTML to apply these stylistic properties:
+   <br><br> <table border=2px width=950px>
+        <tr>
+            <td>&lt<b>p</b> class="myNewStyle"&gtMy CSS styled text&lt/<b>p</b>&gt</tr>
+        </tr>
+    </table>
+<br>And in between the tags at the top of your web page you would insert this CSS code that defines the style we just applied
+<br><br>
+<table border=2px width=950px>
+    <tr>
+        <td>&lt<b>style</b> type="text/css"></td>
+    </tr>
+    <tr>
+        <td>.myNewStyle {</td>
+    </tr>
+    <tr>
+        <td>font-family: Verdana, Arial, Helvetica, sans-serif</td>
+    </tr>
+    <tr>
+        <td> font-weight: bold;</td>
+    </tr>
+    <tr>
+            <td>color: #FF0000;</td>
+    </tr>
+    <tr>
+            <td>}</td>
+    </tr>
+    <tr>
+        <td>&lt/style&gt</td>
+    </tr>
+</table>
+<br>In the above example we <b>embed the css</b> code directly into the page itself. This is fine for smaller projects or in situations where the styles you’re defining will only be used in a single page. There are many times when you will be applying your styles to many pages and it would be a hassle to have to copy and paste your CSS code into each page.
+<br><br>Besides the fact that you will be cluttering up your pages with the same CSS code, you also find yourself having to edit each of these pages if you want to make a style change. Like with JavaScript, you can define/create your CSS styles in a separate file and then link it to the page you want to apply the code to:
+<br><br>
+<table>
+    <tr>
+        <td>&ltlink href="myFirstStyleSheet.css" rel="stylesheet"  type="text/css"&gt</td>
+ 
+    </tr>
+</table>
+<br>The above line of code links your external style sheet called ‘myFirstStyleSheet.css’ to the HTML document. You place this code in between the &lthead&gt &lt/head&gt tags in your web page.<br><br>
+<div class="a3">
+    <input type="button" value="continue to part 2">
+</div>
+       </div>
+<div class="introduction to css">
+<div class="a4">
+    <h3>Introduction to CSS: Part 2</h3>
+    <h3>How to create a linked external stylesheet</h3>
+    To create an external style sheet all you need to do is create a simple text document (on windows you simply right-click and select new -> text document) and then change the file from type .txt to .css<br><br>
+    You can change the file type by just changing the file’s extension. The file’s extension on windows tells the computer what kind of file it is and allows the computer to determine how to handle the file when for example you try to open it.<br><br>
+    You probably guessed it; CSS files are just specially formatted text files, and much in the same way HTML pages are. There is nothing special or different in the file itself, rather it is the contents of the file that make an HTML document and a CSS page what they are.<br><br>
+    When working with a external CSS document, there are a couple of points to remember:<br><br>
+    1. You don’t add these tags in the CSS page itself as you would if you embedded the CSS code in your HTML:<br>
+    <br><table>
+        <tr>
+            <td>&ltstyle type="text/css"&gt&lt/style&gt</td>
+        </tr>
+    </table>
+    <br>
+    Since the CSS link in your web page says that you are linking to a CSS page, you don’t need to declare (in the external CSS file) that the code in the CSS page is CSS. That is what the above tags do. Instead you would just add your CSS code directly to the page like so:<br><br>
+    <table>
+        <tr>
+            <td>.myNewStyle {</td>
+        </tr>
+        <tr>
+                <td> font-family: Verdana, Arial, Helvetica, sans-serif;</td>
+        </tr>
+        <tr>
+            <td>font-weight: bold;</td>
+        </tr>
+        <tr>
+            <td>color: #FF0000;</td>
+        </tr>
+        <tr>
+            <td>}</td>
+        </tr>
+        <tr>
+            <td>.my2ndNewStyle {</td>
+        </tr>
+        <tr>
+            <td> font-family: Verdana, Arial, Helvetica, sans-serif;</td>
+        </tr>
+        <tr>
+            <td> font-weight: bold;</td>
+        </tr>
+        <tr>
+                <td>  color: #FF0000;</td>
+        </tr>
+        <tr>
+                <td>}</td>
+        </tr>
+        <tr>
+             <td>.my3rdNewStyle {</td>
+        </tr>
+        <tr>
+                <td>  font-family: Verdana, Arial, Helvetica, sans-serif;</td>
+           </tr>
+           <tr>
+                <td>font-weight: bold;</td>
+           </tr>
+           <tr>
+                <td>font-size: 12pt;</td>
+           </tr>
+           <tr>
+                <td>color: #FF0000;</td>
+           </tr>
+           <tr>
+                <td>}</td>
+           </tr>
+    </table>
+    <br>In the above example I have created a series CSS classes that can be applied to any HTML tag like so:
+    <br><br>
+    <table>
+        <tr>
+            <td>&ltp&gtMy CSS styled  text&lt/p&gt</td>
+        </tr>
+    </table>
+    <br>In the above examples, I have CSS code where I define my CSS classes and then ‘apply’ them to various elements in the page. Another way to apply CSS is to globally redefine an HTML tag to look a certain way.
+    <br><br>
+    <table>
+        <tr>
+            <td>h1 { font-family: Garamond, "Times New Roman",  serif; font-size: 200%; }</td>
+        </tr>
+    </table>
+<br>
+As you can see, you can redefine any tag and change the way it looks! This can be very powerful.
+<table>
+    <tr>
+        <td>div {</td>
+    </tr>
+    <tr>
+            <td>  background: rgb(204,204,255);</td>
+        </tr>
+        <tr>
+                <td>padding: 0.5em;</td>
+            </tr>
+            <tr>
+                    <td> border: 1px solid #000000;</td>
+                </tr>
+                <tr>
+                        <td>}</td>
+                    </tr>
+</table> <br><br><br><hr>
+</div>
+</div>
+</div>
+
+
+<div class="Basic_concept"  ng-show="r3">
+        <div class="b1">
+            <h3>Basic CSS Concepts: Part 1</h3>
+            In this CSS tutorial I will not be able to show you everything there is about CSS, but you will learn how to create nice looking CSS styled web pages.
+            <br><br>
+            After completing this tutorial, you should have enough information to explore CSS and web design even further<br>
+            <br>
+            <h3>CSS reduces the number of tags used.</h3>
+            Because of the power of CSS, we will be able to reduce the number of HTML tags we use in a page big time, all the while still being able to layout great looking pages using only 6 types (for lack of better words) of HTML tags.<br><br>
+            <b>The tags we will use to layout the content:
+                <br><br>
+            <ol>
+                <li>&lth&gt The Heading tags which range from ‘&lth1&gt&lt/h1&gt’ to ‘&lth6&gt&lt/h6&gt’, are going to be used to mark/tag headings in our pages. So the most important heading will be wrapped in a &lth1&gt tag and the least important in a &lth6&gt tag.
+                    <br><br>An example of a heading:<br><br>
+                    <table>
+                        <tr>
+                            <td>&lth1&gt&ltstrong&gtCSS  Template Layout&lt/strong&gt&lt/h1&gt</td>
+                        </tr>
+                    </table>
+                    <br>All browsers have a default size (for each&lth&gt tag) as to how it renders text when placed between these tags. Many of these defaults can be unusable (especially&lth1&gt) because they come out too big. But never fear, CSS is here. We will use CSS to make the text sizes more to our liking.<br><br>
+
+                </li>
+                <li>
+                        &ltp&gt The Paragraph tag is used to mark parts of the pages as being ‘paragraphs’, simple enough. Paragraph tags are what they call a ‘block element’; that means that it acts like a block where a space is automatically inserted before and after each &ltp&gt tag pair. You see it work in the examples coming up.<br>
+                </li>
+                <li>&ltul&gt and &ltol&gt List tags will be used to create our menus. The tag &ltul&gt is the ‘un-ordered list tag’ that creates a list with bullets or other images/icons that do not specify or denote an order; hence the term ‘un-ordered’. The other list tag mentioned (&ltol&gt) is the ‘ordered list tag’ and it creates a list that, instead of bullets, the list elements are marked with numbers or letters. Code examples to follow.
+                    
+                </li>
+                <li>&ltdiv&gt We all know what the &ltdiv&gt tag is about since we all read the previous article, right? We will use div’s to create containers for parts of our page. One div will be used to ‘hold’ our navigational menu and another div to ‘hold’ the main page.</li>
+                <li>&lta href&gt The most important tag in HTML: the ‘link tag’ or the ‘hyperlink tag’. This makes text ‘hyper’ so that when we click on it we can load another page or activate/call some JavaScript (otherwise known as ECMA script)</li>
+                <li>&ltimg&gt This is the ‘image tag’, allows you to link to images so that they show up in our pages. In HTML images are not embedded into the actual page, instead the image tag (&ltimg&gt) only points to where the image is and the browser will attempt to load that image when a surfer loads your HTML page.</li>
+            </ol>
+            That covers the HTML tags we will use in our layout! No need for table tags, &ltbr&gt tags and nasty &ltfont&gt tags.
+            <br><br><br><hr>
+</div>
+</div>
+
+
+<div class="introduction_to_css" ng-show="r4">
+    <div class="part3"> 
+        <h3>Layout a Page with CSS: Part 1</h3>
+        Our page so far is really very simple. As you may already know, all the content (text, images, Flash etc) that the user sees when viewing a web page is marked-up/coded with HTML in-between the &ltbody&gt and &lt/body&gt tags*.
+ <br> <table>
+      <tr>
+          <td>&ltdiv id="navigation"&gt</div></td>
+      </tr>
+      <tr>
+            <td>   &lth2&gtThe Main navigation&lt/h2&gt</td>
+        </tr>
+    <tr>
+        <td>&lt/div&gt</td>
+    </tr>
+    <tr>
+        <td>&ltdiv id="centerDoc"&gt</td>
+    </tr>
+     <tr>
+        <td>&lth1&gtThe Main Heading&lt/h1&gt</td>
+    </tr>
+    <tr>
+        <td>  &ltp&gtGo to the Web Designers Killer Handbook home page and grab the practice</td>
+    </tr>
+    <tr>
+        <td> HTML page that we will used as the starting template for this  tutorial.</td>
+    </tr>
+    <tr>
+         <td> You can find it under the heading: 'To create the practice  HTML page do</td>
+    </tr>
+     <tr>
+        <td> Follow the instructions there and create your basic HTML page ...  and</td>
+    </tr>
+    <tr>
+        <td>do it now!&lt/p&gt</td>
+    </tr>
+     <tr>
+         <td>&lt/div&gt</td>
+     </tr>                                                                                                                                                           
+    </table>
+    <br>
+    In the above code we see that we have 2 main sections demarked by using &ltdiv&gt tags. As you learned in part one of this tutorial, &ltdiv&gt tags are designed to be used to create a ‘division’ in the document or in other words create a container. We have created two such containers and given them each of them a unique ID:
+    <br><br>
+    <table>
+        <tr>
+            <td>&ltdiv id="navigation"&gt</td>
+        </tr>
+        <tr>
+                <td>   ...  </td>
+            </tr>
+            <tr>
+                    <td>&lt/div&gt</td>
+                </tr>
+    </table>
+    So now that we got the style sheet linked to the document, lets look at some CSS code. This first snippet of code ‘styles’ the unique ID’s we were talking about before:
+<br><br>
+<table>
+    <tr>
+        <td>#navigation {</td>
+    </tr>
+    <tr>
+            <td>position: absolute;</td>
+        </tr>
+        <tr>
+                <td> width: 210px;</td>
+            </tr>
+            <tr>
+                    <td> height: 600px;</td>
+                </tr>
+                <tr>
+                        <td>margin: 0;</td>
+                    </tr>
+                    <tr>
+                            <td>margin-top: 0px;</td>
+                        </tr>
+                        <tr>
+                                <td> border-right: 1px solid #C6EC8C;</td>
+                            </tr>
+                            <tr>
+                                    <td>font-weight: normal;</td>
+                                </tr>
+                                <tr>
+                                        <td>}</td>
+                                    </tr>
+                                    <tr>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                                <td>#centerDoc {</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>position: absolute;</td>
+                                                </tr>
+                                                <tr>
+                                                        <td>padding: 0 0 20px 0; /*top right bottom left*/</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>margin-top: 50px;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>}</td>
+ </tr>
+</table>
+<br>There is a lot going on here so we will focus on just a few elements for now. In the above elements we have 2 selectors, one for each ID and each selectors are grouped/contained by using the curly brackets: { }. So here is the CSS selectors code with all their guts removed.<br><br>
+<br><br><br><hr>
+</div>
+</div>
+
+
+<div class="css tutorial part 3" ng-show="r5">
+   <div class="part4">
+    <h3>
+        Css tutorial part 3
+    </h3>
+    Now that we have that covered, everything gets really easy from here. We’ve established our main document and the major sections are in place, all we need to do is add our text and images<br><br>
+<b>Breaking down the page:</b><br><br>
+This page is simple, we have just a single heading:<br><br>
+<table>
+    
+    <tr>
+            <td>&lth1&gtThe Main  Heading&lt/h1&gt</td>
+        </tr>
+        
+</table>
+<br><br>
+And a single paragraph:<br><br>
+<table>
+    <tr>
+        <td>Go to the Web Designers Killer Handbook home page and grab the practice</td>
+    </tr>
+    <tr>
+            <td>HTML page that we will used as the starting template for this  tutorial. You</td>
+        </tr>
+        <tr>
+                <td>can find it under the heading: 'To create the practice  HTML page do the</td>
+            </tr>
+            <tr>
+                    <td>following:'. Follow the instructions there and create  your basic HTML page</td>
+                </tr>
+                <tr>
+                        <td>... and do it now!</td>
+                    </tr>
+                   
+</table>
+<br>The only thing missing from the page is the actual navigation. The best and easiest way to do this, is by using list (&ltli&gt) tags. That makes sense, since navigational menus are essentially a list of pages.<br><br>
+    We styled the list item tags with this CSS<br><br>
+    <table>
+        <tr>
+            <td>li {</td>
+        </tr>
+        <tr>
+                <td>  list-style-type: none;</td>
+            </tr>
+            <tr>
+                    <td>line-height: 150%;</td>
+                </tr>
+                <tr>
+                        <td>list-style-image: url(../images/arrowSmall.gif);</td>
+                    </tr>
+                    <tr>
+                            <td>}</td>
+                        </tr>
+    </table>
+    The above code uses an image as the bullets for the list and makes the space between the listed items 1 and ½ times larger than normal (I like a little more ‘breathing room’). You don’t have to have an image for the bullets, you could leave it with no images and no bullets by just removing the attribute:
+<br><br>
+<table>
+    <tr>
+        <td>list-style-image:  url(../images/arrowSmall.gif);</td>
+    </tr>
+</table>
+<br>To make things easier (for the purpose of the article), change the CSS affecting the list item tags (&ltli&gt) so that we use a built in bullet:
+<br><table>
+        <tr>
+                <td>li {</td>
+            </tr>
+            <tr>
+                    <td> list-style-type: disc;</td>
+                </tr>
+                <tr>
+                        <td> line-height: 150%;</td>
+                        
+                    </tr>
+                    <tr>
+                            <td>}</td>
+                        </tr>
+</table>
+<br>Now we have the navigation!<br>
+<br>That pretty much covers our goals for this tutorial, but we have just scratched the surface of CSS. As you can see, we created a nice looking page, while using very few types of HTML tags. At this time there isn’t much text on the page, but we could add to the page easily, building it out to include lots of information and images with practically no HTML work at all!
+<br><br><hr>
+</div>
+</div>
+
+
+
+<div class="css_in_image" ng-show="r6">
+    <div class="image">
+        <h3>Using CSS to insert images into your web pages</h3>
+ <br><br>
+ This next part is really easy to understand, easy to use and can be very powerful – triple bonus! With CSS, all block-level and inline elements (tags) can have background images inserted into them. block-level tags are &ltp&gt and &ltdiv&gt
+<br><br>
+Even though you can insert images into any type of tag (block-level or inline), I think it is better form in most situations to use block-level tags for this sort of thing. But in reality it doesn’t matter if you use block-level tags, or inline tags because you can turn any tag into a block-level tag and vice versa; with this simple CSS code I change any tag to block-level:
+<br><br>
+<table>
+    <tr>
+        <td>display: block;</td>
+    </tr>
+</table>
+<br>or<br>
+<table>
+    <tr>
+        <td>display: inline;</td>
+    </tr>
+</table>
+<br>So what? Remember my newsletter where I talked about <a href="https://www.killersites.com/articles/newsletterArchive/Newsletter_March17_2004.htm">inserting backgrounds</a> with CSS? In the same way you can insert images in the backgrounds of your web pages, you can do it with any other element. This combined with some extra padding and you have your headline image where you want it
+<br><br>
+<table>
+    <tr>
+        <td>&lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt</td>
+    </tr>
+    <tr>
+            <td>"http://www.w3.org/TR/html4/loose.dtd"&gt</td>
+        </tr>
+        <tr>
+                <td>&lthtml&gt</td>
+            </tr>
+            <tr>
+                    <td>&lthead&gt</td>
+                </tr>
+                <tr>
+                        <td>&lttitle&gtCSS image placement&lt/title&gt</td>
+                    </tr>
+                    <tr>
+                            <td> &ltmeta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt</td>
+                        </tr>
+                        <tr>
+                                <td>&ltstyle type="text/css" media="screen"&gt</style></td>
+                            </tr>
+                            <tr>
+                                    <td>#headline1 {</td>
+                                </tr>
+                                <tr>
+                                        <td>background-image: url(images/newsletter_headline1.gif);</td>
+                                    </tr>
+                                    <tr>
+                                            <td> background-repeat: no-repeat;</td>
+                                        </tr>
+                                        <tr>
+                                                <td>background-position: left top;</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>padding-top:68px;</td>
+                                                </tr>
+                                                <tr>
+                                                        <td>margin-bottom:50px;</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>}</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td> #headline2 {</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td>   background-image: url(images/newsletter_headline2.gif);</td>
+</tr>
+<tr>
+    <td>background-repeat: no-repeat;</td>
+</tr>
+<tr>
+    <td>background-position: left top;</td>
+</tr>
+<tr>
+    <td>padding-top:68px;</td>
+</tr>
+<tr>
+    <td>}</td>
+</tr>
+<tr>
+    <td>&lt/style&gt</td>
+</tr>
+<tr>
+    <td>&lt/head&gt</td>
+</tr>
+<tr>
+    <td>&ltbody&gt</body></td>
+</tr>
+<tr>
+    <td>&ltdiv id="headline1"&gtSome text … &lt/div&gt</td>
+</tr>
+<tr>
+    <td>&ltdiv id="headline2"&gtSome more text .. &lt/div&gt</td>
+</tr>
+<tr>
+    <td>&lt/body&gt</td>
+</tr>
+<tr>
+    <td>&lt/html&gt</td>
+</tr>
+
+</table>
+<br>To keep this example easy to follow, I inserted the CSS code into the web page itself. Typically I would place my CSS code in a separate CSS file and link to it so that I could reuse the CSS code on many pages<br><br>
+In the above CSS code you will notice that I insert a background image for each ID (headline1 and headline2) and I increase the padding at the top (padding-top:68px) to push down the text to make space for the background images<br><br>
+This may seem unclear now, so just take a look at the page and then pop open the source code and check it out for yourself. Feel free to take a copy and play with the padding number and see how it changes things. Why did I add 68px to the padding? The image is 68px tall, but I could put any number I like to get the placement I want. Padding does not affect the background image; it only affects the contents inside the tag/element. In this case I used &gtdiv&lt tags
+<br><br><hr>
+</div>
+</div>
+
+
+<div class="css_in_web_pages" ng-show="r7">
+    <div class="webpages">
+        <h1>Css In Web Pages</h1>
+        <h3>The 3 ways to insert CSS into your web pages</h3>
+        The wise people who created CSS came up with 3 basic ways for you to use CSS in your web pages:<br><br>
+        <h4>1. With an external file that you link to in your web page:<h4><br>
+            <table>
+                <tr>
+                    <td>&ltlink href="myCSSfile.css" rel="stylesheet" type="text/css"&gt</td>
+                </tr>
+            </table>
+            <br>or<br>
+            <table>
+                <tr>
+                    <td>&ltstyle type="text/css" media="all"&gt</style></td>
+                </tr>
+                <tr>
+                        <td> @import "myCSSfile.css";</td>
+                    </tr>
+                    <tr>
+                            <td>&lt/style&gt</td>
+                        </tr>
+            </table>
+            <br>
+            Why use the import method versus the link method when using external style sheets? Use the import method if you want to support really old browsers like Netscape 4.0.<br><br>
+            Let me explain: Netscape can’t handle most CSS beyond font settings and colors, if it finds any other types of CSS it could cause good old Netscape 4 to crash in some occasions or at the very least mangle your page.<br><br>
+            Netscape 4 does not understand the @import method of linking to a style sheet like the newer browsers can, so Netscape just ignores it. You can use this to hide the fancy CCS code in the external style sheet by using the @import method so all the good browsers can reference it while keeping Netscape 4 out of the picture.<br><br>
+            Netscape 4.0 is pretty much dead (that is really a good thing) so I personally don’t worry much about it. But for some of you, it may be of concern so I thought it should be mentioned.<br><br>
+            <h4>2. By creating a CSS block in the web page itself; typically inserted at the top of the web page in between the &lthead&gt and &lt/head&gt tags</h4>
+    <br><table>
+        <tr>
+            <td>&lthead&gt</td>
+        </tr>
+        <tr>
+                <td>  &ltstyle type="text/css"&gt</td>
+            </tr>
+            <tr>
+                    <td>p { padding-bottom: 12px; }</td>
+                </tr>
+                <tr>
+                        <td>&lt/style&gt</td>
+                    </tr>
+                    <tr>
+                            <td>&lt/head&gt</td>
+                        </tr>
+</table>
+<br><br>
+
+<h4>3. By inserting the CSS code right on the tag itself:</h4>
+
+<br><br>
+<table>
+    <tr>
+        <td>&ltp style="padding-bottom:12px;"&gtYour Text&lt/p&gt</td>
+    </tr>
+</table>  
+<br>
+So some of you may be asking why have the 3 methods of including the CSS in a web page? The answer is: flexibility and laziness! Ok I’m kidding about the laziness, replace it with ‘precision’. So what the heck does that mean?<br><br>
+I think the easiest way to explain to you what’s going on, is by giving you real examples that demonstrate the differences. Wait a second, don’t fall asleep … the examples are short and I think that once you finish, you will see how easy it really is!<br><br>
+Another reason that you want to continue reading this article is that you will gain a good understanding of some fundamental (and practical) CSS principles – remember that the difference between people who are really good at what they do, and those who are not so good, is in the mastery of the basics. Lets get down on it<br><br>
+<h3>Method 1: Create a separate CSS file and link it to your web page(s)</h3>
+The heading for this part of the article hints at why you would want to go through the trouble of creating a separate CSS file instead of just typing in the CSS code in the web page itself. Can you guess? Keep trying … times up! Did you get it? I could quote you some nerd centric description that describes the advantage; the problem is that only nerds who already know would understand!<br><br>
+In a nutshell: by keeping the CSS code in its own file, you can link that CSS file to as many web pages as you want. This has two major advantages:<br><br>
+<ol>
+    <li>You will have much less code in all your HTML pages – makes the pages neater and easier to manage and makes the web pages a little faster on the download. (Although this point is really minor in most cases, and is really over blown in my opinion by some people)</li>
+    <li>It can potentially reduce the amount of work you have to do in a big way. Why you ask? Simple; lets say you have 50 web pages where you’ve set the text to be black and the headline text (text in between the &lth3&gt tags for example) to blue. Then one day you decide you want to change the color of the text. Since the CSS that controls the text color for the 50 pages is in one CSS file, you can easily change the color of your text in all 50 pages by changing one line in the CSS file!</li>
+
+</ol><br>
+If on the other hand you had decided to include all your font color information in each page, you would have had to change all 50 pages. This would have been even worse if you had been using font tags, or CSS right on each tag, you would have to change the color settings/code on all the &ltp&gt and &lth3&gt tags in all 50 pages! I can tell you from experience that that sucks big time!<br><br>
+<b>The rule:</b> If you are going to have more than one web page with the same stylistic properties (that look the same in some way) you should create a separate CSS file and link your web pages to it <br><br>
+<h3>Method 2: Create a CSS block in the web page itself</h3>
+<b>The Rule:</b> Use this method if you want to override the CSS you have in a linked CSS file or if you only have a one-page web site.
+<br><br>Now that we covered the first method of putting all your CSS code in a separate file and linking to it, the other methods are easy to describe.
+<br><br>CSS stands for (is the acronym for): ‘Cascading Style Sheets.’ I think the words ‘style sheets’ in CSS are self-describing … we know what ‘style’ in style sheets mean. But what is the meaning of ‘cascading’ in CSS
+<br><br>
+<h3>The cascading effect in CSS</h3>
+<br>The word ‘cascading’ in CSS describes a cascading mechanism; that is to say that the CSS code on the page itself will override the CSS code in a separate linked file. And subsequently, CSS declared ‘inline’ on the tag itself would override all other CSS
+<br><br>So let’s look a practical example; let’s say you have a web site with 50 pages where the layout and fonts are the same on all 50 pages. Wisely you put the CSS information that sets the layout and font choices in a separate style sheet, but for a particular page you need to change the color of some of the text and add a border around a paragraph. This is a perfect example where you might want to place a little CSS in the page itself since the color and border will be unique to that page. Is this all sinking in?
+<br><br>
+<h3>Method 3: Embed the CSS right on the tags themselves (called inline CSS)</h3>
+<br><b>The Rule:</b> Use this method on a unique element/tag that you want to affect with CSS.
+<br><br>An example can be with a special heading on the page where you want to have a little more padding than you typically do for a heading. Instead of creating a class elsewhere that will only be used on this one occasion, it makes sense to me to just include the CSS inline. I have to stress that inline CSS is something you should rarely if ever use because it can get messy quick.
+<br><br><hr>
+</div>
+</div>
+
+</div>
+</body>
+</html>
